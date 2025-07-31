@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth/next';
-import { authOptions } from '../../../auth/[...nextauth]/route';
+import { authOptions } from '../../../auth/[...nextauth]/config';
 import { connectDb } from '@/config';
 import Customer from '@/models/Customer';
 import bcrypt from 'bcryptjs';
