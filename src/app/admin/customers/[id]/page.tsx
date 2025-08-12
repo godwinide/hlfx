@@ -633,11 +633,21 @@ export default function CustomerDetailsPage() {
                     {...register('currency')}
                     className="w-full bg-white/5 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-teal-500 [&>option]:bg-gray-800 [&>option]:text-white"
                   >
-                    <option value="USD" className="bg-gray-800 text-white">USD</option>
-                    <option value="EUR" className="bg-gray-800 text-white">EUR</option>
-                    <option value="GBP" className="bg-gray-800 text-white">GBP</option>
-                    <option value="CAD" className="bg-gray-800 text-white">CAD</option>
-                    <option value="JPY" className="bg-gray-800 text-white">JPY</option>
+                    <option value="USD" className="bg-gray-800 text-white">USD - US Dollar</option>
+                    <option value="EUR" className="bg-gray-800 text-white">EUR - Euro</option>
+                    <option value="GBP" className="bg-gray-800 text-white">GBP - British Pound</option>
+                    <option value="CAD" className="bg-gray-800 text-white">CAD - Canadian Dollar</option>
+                    <option value="JPY" className="bg-gray-800 text-white">JPY - Japanese Yen</option>
+                    <option value="AUD" className="bg-gray-800 text-white">AUD - Australian Dollar</option>
+                    <option value="CHF" className="bg-gray-800 text-white">CHF - Swiss Franc</option>
+                    <option value="CNY" className="bg-gray-800 text-white">CNY - Chinese Yuan</option>
+                    <option value="INR" className="bg-gray-800 text-white">INR - Indian Rupee</option>
+                    <option value="SGD" className="bg-gray-800 text-white">SGD - Singapore Dollar</option>
+                    <option value="MXN" className="bg-gray-800 text-white">MXN - Mexican Peso</option>
+                    <option value="BRL" className="bg-gray-800 text-white">BRL - Brazilian Real</option>
+                    <option value="ZAR" className="bg-gray-800 text-white">ZAR - South African Rand</option>
+                    <option value="HKD" className="bg-gray-800 text-white">HKD - Hong Kong Dollar</option>
+                    <option value="AED" className="bg-gray-800 text-white">AED - UAE Dirham</option>
                   </select>
                   {errors.currency && (
                     <p className="mt-1 text-sm text-red-500">{errors.currency.message}</p>
