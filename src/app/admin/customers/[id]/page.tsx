@@ -200,6 +200,7 @@ export default function CustomerDetailsPage() {
       'IN': '🇮🇳',
       'BR': '🇧🇷',
       'MX': '🇲🇽',
+      'VN': '🇻🇳',
     };
     return flags[countryCode] || '🌍';
   };
@@ -559,6 +560,7 @@ export default function CustomerDetailsPage() {
                     <option value="IN" className="bg-gray-800 text-white">India</option>
                     <option value="BR" className="bg-gray-800 text-white">Brazil</option>
                     <option value="MX" className="bg-gray-800 text-white">Mexico</option>
+                    <option value="VN" className="bg-gray-800 text-white">Vietnam</option>
                   </select>
                   {errors.country && (
                     <p className="mt-1 text-sm text-red-500">{errors.country.message}</p>
@@ -648,6 +650,7 @@ export default function CustomerDetailsPage() {
                     <option value="ZAR" className="bg-gray-800 text-white">ZAR - South African Rand</option>
                     <option value="HKD" className="bg-gray-800 text-white">HKD - Hong Kong Dollar</option>
                     <option value="AED" className="bg-gray-800 text-white">AED - UAE Dirham</option>
+                    <option value="VND" className="bg-gray-800 text-white">VND - Vietnamese Dong</option>
                   </select>
                   {errors.currency && (
                     <p className="mt-1 text-sm text-red-500">{errors.currency.message}</p>
